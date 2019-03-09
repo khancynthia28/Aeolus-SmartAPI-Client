@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<table>
+  <thead>
+  <tr>
+    <th colspan="2">Contingency</th>
+    <th colspan="2">Proportional Reporting Ratio</th>
+    <th colspan="2">Reporting Odds Ratio</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Contingency Table Codes</td>
+    <td>Contingency Table Names</td>
+    <td>PPR Codes</td>
+    <td>PPR Names</td>
+    <td>ROR Codes</td>
+    <td>ROR Names</td>
+  </tr>
+  <tr>
+    <td><input ngModel="cdc" type="text" placeholder="drug code"><input ngModel="coc" type="text" placeholder="outcome code"></td>
+    <td><input ngModel="cdn" type="text" placeholder="drug name"><input ngModel="con" type="text" placeholder="outcome name"></td>
+    <td><input ngModel="pdc" type="text" placeholder="drug code"><input ngModel="poc" type="text" placeholder="outcome code"></td>
+    <td><input ngModel="pdn" type="text" placeholder="drug name"><input ngModel="pon" type="text" placeholder="outcome name"></td>
+    <td><input ngModel="rdc" type="text" placeholder="drug code"><input ngModel="roc" type="text" placeholder="outcome code"></td>
+    <td><input ngModel="rdn" type="text" placeholder="drug name"><input ngModel="ron" type="text" placeholder="outcome name"></td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="getContingencyTableCodes">Get Contingency codes</button>
+    </td>
+    <td>
+      <button (click)="getContingencyTableNames">Get Contingency Names</button>
+    </td>
+    <td>
+      <button (click)="getPPRCodes">Get PPR codes</button>
+    </td>
+    <td>
+      <button (click)="getPPRNames">Get PPR Names</button>
+    </td>
+    <td>
+      <button (click)="getRORCodes">Get ROR codes</button>
+    </td>
+    <td>
+      <button (click)="getRORNames">Get ROR Names</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<br/>
+<br/>
+<hr>
+<div id="results">
+  {{results}}
+</div>
+<router-outlet></router-outlet>
